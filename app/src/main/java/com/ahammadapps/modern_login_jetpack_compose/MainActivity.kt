@@ -4,12 +4,15 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.ahammadapps.modern_login_jetpack_compose.core.theme.CustomTheme
+import com.ahammadapps.modern_login_jetpack_compose.core.theme.White
 import com.ahammadapps.modern_login_jetpack_compose.features.auth.presentation.pages.LoginPageView
 
 class MainActivity : ComponentActivity() {
@@ -18,7 +21,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             CustomTheme  {
-                Scaffold() {innerPadding ->
+                Scaffold() { innerPadding ->
                     LoginPageView(modifier = Modifier.padding(innerPadding))
                 }
             }

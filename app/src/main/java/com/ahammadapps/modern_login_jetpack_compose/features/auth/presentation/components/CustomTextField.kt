@@ -4,6 +4,8 @@ import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.interaction.collectIsFocusedAsState
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardActions
@@ -80,7 +82,7 @@ fun CustomTextfield(
         TextField(
             value = value,
             onValueChange = onValueChange,
-            modifier = modifier
+            modifier = modifier.height(60.dp)
                 .border(
                     width = borderWidth,
                     color = borderColor,
