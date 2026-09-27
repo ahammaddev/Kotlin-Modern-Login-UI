@@ -13,3 +13,7 @@ val Pink40 = Color(0xFF7D5260)
 val Primary = Color(0xFFD3FF55)
 
 val Grey = Color(0xFF474747)
+
+val Black = Color(0xFF000000)
+
+val Red = Color(0xFFFF1400)

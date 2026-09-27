@@ -9,7 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.ahammadapps.modern_login_jetpack_compose.core.theme.MaterialTheme
+import com.ahammadapps.modern_login_jetpack_compose.core.theme.CustomTheme
 import com.ahammadapps.modern_login_jetpack_compose.features.auth.presentation.pages.LoginPageView
 
 class MainActivity : ComponentActivity() {
@@ -17,7 +17,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            MaterialTheme() {
+            CustomTheme  {
                 Scaffold() {innerPadding ->
                     LoginPageView(modifier = Modifier.padding(innerPadding))
                 }
