@@ -139,7 +139,7 @@ fun LoginPageView(modifier: Modifier){
             Row(modifier = Modifier.fillMaxWidth().padding(vertical = 10.dp), horizontalArrangement = Arrangement.Center, verticalAlignment = Alignment.CenterVertically,) {
                 Image(painter = painterResource(id = R.drawable.google_icon), contentDescription = null, modifier = Modifier.size(24.dp))
             Spacer(Modifier.size(5.dp))
-                Text("Continue with Google", style = TextStyle(fontSize = 14.sp))
+                Text("Continue with Google", style = TextStyle(fontSize = 14.sp, fontWeight = FontWeight.Bold))
             }
         }
 
